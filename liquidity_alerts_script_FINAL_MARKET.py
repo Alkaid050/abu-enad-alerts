@@ -58,7 +58,7 @@ def process_stock(symbol):
     if not sent_signals[symbol]["entry"] and volume > 50000 and change >= 2:
         expected = calculate_expected_price(current_price, volume / 1000)
         fair_value = round(expected * 1.1, 2)
-       message = f"🚨 <b>دخول سيولة</b>\n📈 <b>{symbol}</b>\n💰 السعر الحالي: <b>{current_price}</b>\n⏰ {timestamp}"
+       message =f"🚨 <b>دخول سيولة</b>\n📈 <b>{symbol}</b>\n💰 السعر الحالي: <b>{current_price}</b>\n⏰ {timestamp}"
         send_telegram_message(CHANNEL_1, msg)
         sent_signals[symbol]["entry"] = True
         peak_liquidity[symbol] = volume
