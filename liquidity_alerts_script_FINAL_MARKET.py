@@ -91,5 +91,6 @@ def fetch_symbols():
 
 # تنفيذ على كل سهم
 symbols = fetch_symbols()
+print("✅ بدأ فحص السوق على الرموز المختارة...")
 for symbol in symbols:
     process_stock(symbol)
