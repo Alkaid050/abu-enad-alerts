@@ -43,7 +43,7 @@ def process_stock(symbol):
             current["entry_liquidity"] = liquidity
             current["last_boost"] = liquidity
             data_map[symbol] = current
-            send_alert(CHANNEL_GENERAL, f"🚨 *دخول سيولة*
+           send_alert(CHANNEL_GENERAL, f"دخول سيولة: {symbol}")
 السهم: `{symbol}`
 السعر: ${price}")
             return
