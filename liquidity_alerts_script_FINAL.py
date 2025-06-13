@@ -1,4 +1,4 @@
-import requests
+"import requests
 import json
 from datetime import datetime
 import pytz
@@ -66,7 +66,7 @@ def process_stock(symbol):
         expected_price = calculate_expected_price(current_price, volume / 1000)
         fair_value = round(expected_price * 1.1, 2)
 
-        message = f"🚨 <b>دخول سيولة</b>
+        message = f"🚨 <b>دخول سيولة</b>"
 
 📈 <b>{symbol}</b>
 💰 السعر الحالي: <b>{current_price}</b>
