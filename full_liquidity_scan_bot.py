@@ -158,3 +158,6 @@ class LiquidityBot:
 if __name__ == "__main__":
     bot = LiquidityBot()
     bot.run_scan()
+while True:
+        time.sleep(60)
+        bot.run_scan()
