@@ -20,11 +20,11 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # ===== إعدادات API والقنوات =====
-FINNHUB_API_KEY = "248a6135d4cf4dd9aafa3417f115795e"
-API_KEY_TWELVEDATA = "248a6135d4cf4dd9aafa3417f115795e"
-TELEGRAM_BOT_TOKEN = "7413413899:AAG_3UpCE8TbV0RST6c9189Sip2B3k0MbW8"
-CHANNEL_GENERAL = "@abu_enad_signals"
-CHANNEL_MICROSCOPE = "@abu_enad_signals_2"
+FINNHUB_API_KEY = os.getenv("FINNHUB_API_KEY")
+API_KEY_TWELVEDATA = os.getenv("API_KEY_TWELVEDATA")
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+CHANNEL_GENERAL = os.getenv("CHANNEL_GENERAL")
+CHANNEL_MICROSCOPE = os.getenv("CHANNEL_MICROSCOPE")
 
 # ===== إعدادات التداول =====
 MIN_VOLUME_THRESHOLD = 50000
