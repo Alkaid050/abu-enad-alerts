@@ -155,3 +155,6 @@ class LiquidityBot:
             time.sleep(8)
 
         logger.info("✅ تم الانتهاء من المسح الكامل.")
+if __name__ == "__main__":
+    bot = LiquidityBot()
+    bot.run_scan()
