@@ -21,11 +21,11 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # ===== إعدادات API والقنوات =====
-FINNHUB_API_KEY = "your_finnhub_api_key"  # استبدل بمفتاحك
-API_KEY_TWELVEDATA = "your_twelvedata_api_key"  # استبدل بمفتاحك
-TELEGRAM_BOT_TOKEN = "your_telegram_bot_token"  # استبدل بمفتاحك
-CHANNEL_GENERAL = "@your_general_channel"  # استبدل بقناتك
-CHANNEL_MICROSCOPE = "@your_microscope_channel"  # استبدل بقناتك
+FINNHUB_API_KEY = "d16sfh9r01qkv5jd2beg"
+API_KEY_TWELVEDATA = "248a6135d4cf4dd9aafa3417f115795e"
+TELEGRAM_BOT_TOKEN = "7413413899:AAG_3UpCE8TbV0RST6c9189Sip2B3k0MbW8"
+CHANNEL_GENERAL = "@abu_enad_signals"
+CHANNEL_MICROSCOPE = "@abu_enad_signals_2"
 
 # ===== إعدادات التداول =====
 MIN_VOLUME_THRESHOLD = 50000
@@ -576,7 +576,7 @@ def main():
     print(f"💰 الحد الأقصى للسعر: ${MAX_STOCK_PRICE}")
     print(f"📊 الحد الأدنى للحجم: {MIN_VOLUME_THRESHOLD:,}")
     print("=" * 60)
-    
+    # ✅ إضافة المفاتيح النهائية وتجهيز الكود للتشغيل
     bot = LiquidityBot()
     bot.run_continuous()
 
