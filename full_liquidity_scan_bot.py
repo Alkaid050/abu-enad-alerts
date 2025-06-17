@@ -26,12 +26,11 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # ===== إعدادات API =====
-API_KEY_TWELVEDATA = "your_api_key_here"
-FINNHUB_API_KEY = "your_api_key_here"
-TELEGRAM_BOT_TOKEN = "your_bot_token"
-CHANNEL_GENERAL = "@your_channel"
-CHANNEL_MICROSCOPE = "@your_microscope_channel"
-
+FINNHUB_API_KEY = "d16sfh9r01qkv5jd2beg"
+API_KEY_TWELVEDATA = "248a6135d4cf4dd9aafa3417f115795e"
+TELEGRAM_BOT_TOKEN = "7413413899:AAG_3UpCE8TbV0RST6c9189Sip2B3k0MbW8"
+CHANNEL_GENERAL = "@abu_enad_signals"
+CHANNEL_MICROSCOPE = "@abu_enad_signals_2"
 # ===== إعدادات التداول =====
 MAX_STOCK_PRICE = 10.0
 MIN_VOLUME_THRESHOLD = 50000
